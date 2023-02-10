@@ -13,3 +13,11 @@ git push -u origin main
 git remote add origin https://github.com/s414june/myFirstSystemTemplate.git
 git branch -M main
 git push -u origin main
+
+##監看Github Pages分支
+git checkout gh-pages
+
+##常用
+git add .
+git commit -m "要提交的內容"
+git push
