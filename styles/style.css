@@ -1,0 +1,54 @@
+:root {
+  --menu-width: 300px;
+  --main--width: calc(100vw - var(--menu-width));
+}
+body{
+    overflow: hidden;
+}
+nav {
+  /* flex-grow: 1; */
+  height: fit-content;
+}
+.btn {
+  border-style: none;
+}
+
+.col-form-label {
+  white-space: nowrap;
+}
+
+#menu {
+  width: var(--menu-width);
+  user-select:none;
+}
+
+.menu-btn {
+  margin: 10px 5px;
+  cursor: pointer;
+}
+.menu-btn > div {
+  width: 18px;
+  height: 3px;
+  background: #808080;
+  margin: 3px;
+  border-radius: 1.5px;
+}
+#menu .accordion .list-group .list-group-item {
+  padding-left: 2rem;
+}
+
+#main {
+  max-width: var(--main--width);
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+}
+.dataTables_wrapper {
+  width: 100%;
+  overflow: auto;
+}
+.dataTables_wrapper th{
+    white-space: nowrap;
+}
+/* input[type=text]{
+    background-color: aqua;
+} */
