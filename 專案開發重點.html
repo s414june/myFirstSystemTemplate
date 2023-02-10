@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端教學講義</title>
+</head>
+
+<body>
+    <div id="paper">
+        <header>
+            <h1>前端教學講義</h1>
+        </header>
+        <div>
+            <h2>課前準備</h2>
+            <ol>
+                <li>安裝
+                    <a target="_blank" href="https://code.visualstudio.com/">Visual Studio Code</a>
+                    (不是Visual Studio)
+                    <br />
+                    【安裝VS Code 內部套件】
+                    <ul>
+                        <li><a
+                                href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a>
+                            (程式碼格式化工具)</li>
+                        <li><a target="_blank"
+                                href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"> Live
+                                Server </a>
+                            (預覽前端畫面工具)</li>
+                    </ul>
+                </li>
+                <li>安裝
+                    <a target="_blank" href="https://git-scm.com/downloads">Git</a>
+                </li>
+                <li>申請
+                    <a target="_blank" href="https://github.com/">Github</a>
+                    帳號
+                </li>
+            </ol>
+            <h2>所需套件與CDN(連結)</h2>
+            <ol>
+                <li>
+                    <a target="_blank"
+                        href="https://getbootstrap.com/docs/5.3/getting-started/introduction/#cdn-links">Bootstrap</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://cdnjs.com/libraries/jquery">jQuery</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://datatables.net/manual/installation#CDN">DataTables</a>
+                </li>
+            </ol>
+            <br />
+            <h2>專案檔使用元件</h2>
+            <h3>Bootstrap</h3>
+            <ul>
+                <li>
+                    <a href="https://getbootstrap.com/docs/5.3/components/navbar/#toggler">導覽列</a>
+                </li>
+                <li>
+                    <a href="https://getbootstrap.com/docs/5.3/components/accordion/#flush">手風琴</a>
+                </li>
+                <li>
+                    <a href="https://getbootstrap.com/docs/5.3/components/dropdowns/#menu-alignment">下拉功能表</a>
+                </li>
+                <li>
+                    <a href="https://getbootstrap.com/docs/5.3/components/list-group/#flush">列表群組</a>
+                </li>
+                <li>
+                    <a href="https://getbootstrap.com/docs/5.3/components/card/#header-and-footer">卡片</a>
+                </li>
+                <li>
+                    <a href="https://getbootstrap.com/docs/5.3/forms/form-control/#readonly-plain-text">表單控制項</a>
+                </li>
+            </ul>
+            <h3>DataTables</h3>
+            <ul>
+                <li>
+                    <a href="https://datatables.net/examples/basic_init/zero_configuration.html">Demo</a>
+                </li>
+            </ul>
+            <h2>專案檔運用技術</h2>
+            <h3>Css</h3>
+            <ul>
+                <li><span class="highlight">Margin、Padding
+                        <br />
+                        【公式】上下/左右；上/右/下/左
+                    </span>
+                </li>
+                <li class="highlight">Flex佈局</li>
+                <li class="highlight">Calc計算</li>
+                <li class="highlight">White Space</li>
+                <li>(進階)Css變數</li>
+                <li>Overflow</li>
+                <li>Border Radius 圓角</li>
+            </ul>
+            <h3>jQuery / JavaScript</h3>
+            <ul>
+                <li>Document Ready
+                    <br />
+                    等待DOM(文檔物件模型)載入
+                    <br />
+                    (程式碼載入順序：除了函數，從上到下)
+                </li>
+                <li>
+                    F12 / console.log() / 小技巧(看Element屬性)
+                </li>
+                <li>
+                    let、var、const的差別
+                    <br />
+                    var為「<span class="highlight">函數變數</span>」，作為全域變數使用，有汙染全域的問題
+                    <br />
+                    let為「<span class="highlight">區域變數</span>」(區塊：包在`{}`內)，區塊各自獨立。
+                    <br />
+                    const為「區域常數」，與let一樣是<span class="highlight">ES6</span>（Javascript的標準）出來的新語法定義。
+                    <br />
+                    對於基本數據類型（如number、bigint、string、boolean、null、undefined）來說不可修改，對於複雜數據類型（如object）來說可以修改裡面的值。
+                </li>
+            </ul>
+            <h3>Github Pages</h3>
+            <br />
+            <h2>補充：CSS選擇器</h2>
+            <ul>
+                <li>
+                    / . /class；
+                    / # /id；
+                    / [] /attribute
+                </li>
+                <li>
+                    /  /後代選擇器；
+                    / > /子代選擇器；
+                    / ~ /同代選擇器
+                </li>
+                <li>
+                    / :not() /排除
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(179, 215, 218);
+        font-size: 1.2em;
+    }
+
+    #paper {
+        width: 1000px;
+        background-color: white;
+        padding: 1rem;
+        position: relative;
+        border-radius: 7px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    .code,
+    code {
+        background-color: rgb(180, 180, 180);
+        color: black;
+        /* white-space: inherit; */
+    }
+
+    code {
+        white-space: break-spaces;
+    }
+
+    pre {
+        margin: 0;
+    }
+
+    .highlight {
+        color: blue;
+        font-weight: bold;
+    }
+</style>
+
+</html>
