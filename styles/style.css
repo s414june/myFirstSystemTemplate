@@ -63,15 +63,14 @@ nav {
     margin-left: 34px;
   }
   :root {
-    --menu-width: 300px;
     --main--width: calc(100vw - 34px);
   }
 }
 
 //手機高度
 .vh-100 {
-  height: calc(100 * var(--vh));
+  height: calc(100 * var(--vh)) !important;
 }
 .min-vh-100 {
-  min-height: calc(100 * var(--vh));
+  min-height: calc(100 * var(--vh)) !important;
 }
