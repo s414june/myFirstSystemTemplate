@@ -1,9 +1,11 @@
 :root {
   --menu-width: 300px;
   --main--width: calc(100vw - var(--menu-width));
+  //手機高度
+  --vh: 100vh;
 }
-body{
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
 nav {
   /* flex-grow: 1; */
@@ -19,7 +21,7 @@ nav {
 
 #menu {
   width: var(--menu-width);
-  user-select:none;
+  user-select: none;
 }
 
 .menu-btn {
@@ -46,9 +48,30 @@ nav {
   width: 100%;
   overflow: auto;
 }
-.dataTables_wrapper th{
-    white-space: nowrap;
+.dataTables_wrapper th {
+  white-space: nowrap;
 }
 /* input[type=text]{
     background-color: aqua;
 } */
+
+@media screen and (max-width: 767px) {
+  #menuOutside {
+    position: fixed;
+  }
+  #mainOutside {
+    margin-left: 34px;
+  }
+  :root {
+    --menu-width: 300px;
+    --main--width: calc(100vw - 34px);
+  }
+}
+
+//手機高度
+.vh-100 {
+  height: calc(100 * var(--vh));
+}
+.min-vh-100 {
+  min-height: calc(100 * var(--vh));
+}

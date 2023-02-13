@@ -1,5 +1,7 @@
 // @ts-nocheck
 $(function () {
+    //手機高度
+    $("html").css("--vh", $(window).width());
     const maxMenuWidth = $("html").css("--menu-width");
     $(".menu-btn").click(() => {
         $("#menu").toggle();
@@ -11,6 +13,10 @@ $(function () {
     $('#example').DataTable({
         searching: false
     });
+    $(window).resize(()=>{
+        //手機高度
+        $("html").css("--vh", $(window).width());
+    })
 })
 // $(document).ready(function () {
 //     // searching: false
