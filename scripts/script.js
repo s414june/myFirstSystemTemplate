@@ -1,7 +1,7 @@
 // @ts-nocheck
 $(function () {
     //手機高度
-    $("html").css("--vh", $(window).height());
+    defineMobileVh();
     const maxMenuWidth = $("html").css("--menu-width");
     if($(window).width()<768){
         toggleMenu();
@@ -14,7 +14,7 @@ $(function () {
     });
     $(window).resize(()=>{
         //手機高度
-        $("html").css("--vh", $(window).height());
+        defineMobileVh();
     })
     function toggleMenu(){
         $("#menu").toggle();
@@ -22,6 +22,9 @@ $(function () {
         let nextWitdh = 0;
         nextWitdh = nowWidth === maxMenuWidth ? 0 : maxMenuWidth;
         $("html").css("--menu-width", nextWitdh);
+    }
+    function defineMobileVh(){
+        $("html").css("--vh", $(window).height()/100 + "px");
     }
 })
 // $(document).ready(function () {

@@ -41,7 +41,7 @@ nav {
 
 #main {
   max-width: var(--main--width);
-  max-height: calc(100vh - 40px);
+  max-height: calc(100 * var(--vh) - 40px);
   overflow: auto;
 }
 .dataTables_wrapper {
