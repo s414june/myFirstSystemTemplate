@@ -9,7 +9,7 @@ $(function () {
         toggleMenuWidth();
     })
     $('#example').DataTable({
-        searching: false
+        searching: false 
     });
     $(window).resize(() => {
         //手機高度
