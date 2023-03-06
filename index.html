@@ -96,49 +96,51 @@
             <!-- navbar-expand-lg改成navbar-expand -->
             <!-- 背景改成bg-white -->
             <!-- 加上shadow-sm -->
-            <nav class="navbar navbar-expand bg-white shadow-sm">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">後台管理</a>
-                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button> -->
-                    <!-- 移除collapse navbar-collapse -->
-                    <div class="d-flex flex-grow-1" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <!-- <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled">Disabled</a>
-                                </li> -->
-                        </ul>
-                        <!-- <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form> -->
-                        <div>
-                            <div class="dropdown">
-                                <!-- 去掉btn-secondary -->
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    June.Wu
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="#">修改密碼</a></li>
-                                    <li><a class="dropdown-item" href="#">登出</a></li>
-                                </ul>
+            <div id="title">
+                <nav class="navbar navbar-expand bg-white shadow-sm">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">後台管理</a>
+                        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button> -->
+                        <!-- 移除collapse navbar-collapse -->
+                        <div class="d-flex flex-grow-1" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <!-- <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled">Disabled</a>
+                                    </li> -->
+                            </ul>
+                            <!-- <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form> -->
+                            <div>
+                                <div class="dropdown">
+                                    <!-- 去掉btn-secondary -->
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        June.Wu
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">修改密碼</a></li>
+                                        <li><a class="dropdown-item" href="#">登出</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </nav>
-            <section id="main" class="bg-dark-subtle flex-grow-1 p-3">
-                <div class="card">
+                </nav>
+            </div>
+            <section id="main" class="bg-dark-subtle flex-grow-1">
+                <div class="card m-3">
                     <!-- 加上bg-primary text-white -->
                     <div class="card-header bg-dark text-white">
                         查詢員工資料
@@ -168,7 +170,7 @@
                     </div>
                 </div>
                 <!-- 加上m-3 -->
-                <div class="card">
+                <div class="card m-3">
                     <!-- 加上bg-primary text-white -->
                     <div class="card-header bg-dark text-white">
                         員工清單
