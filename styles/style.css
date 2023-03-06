@@ -41,7 +41,7 @@ nav {
 
 #main {
   max-width: var(--main--width);
-  max-height: calc(100 * var(--vh) - 40px - 1rem);
+  /* max-height: calc(100 * var(--vh) - 40px - 1rem); */
   overflow: auto;
 }
 #main .card:not(:last-child){
