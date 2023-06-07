@@ -1,7 +1,7 @@
 :root {
   --menu-width: 300px;
   --main--width: calc(100vw - var(--menu-width));
-  //手機高度
+  /* 手機高度 */
   --vh: 100vh;
 }
 body {
@@ -71,7 +71,7 @@ nav {
   }
 }
 
-//手機高度
+/* 手機高度 */
 .vh-100 {
   height: calc(100 * var(--vh)) !important;
 }
